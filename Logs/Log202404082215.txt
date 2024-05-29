@@ -1,0 +1,41 @@
+2024-04-08 22:15:25.048 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-04-08 22:15:25.386 +05:30 [INF] Now listening on: https://localhost:7033
+2024-04-08 22:15:25.389 +05:30 [INF] Now listening on: http://localhost:5008
+2024-04-08 22:15:25.393 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-04-08 22:15:25.395 +05:30 [INF] Hosting environment: Development
+2024-04-08 22:15:25.396 +05:30 [INF] Content root path: C:\Users\User\source\repos\api8
+2024-04-08 22:15:33.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7033/swagger/index.html - null null
+2024-04-08 22:15:33.373 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7033/swagger/index.html - 200 null text/html;charset=utf-8 244.7614ms
+2024-04-08 22:15:33.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7033/_framework/aspnetcore-browser-refresh.js - null null
+2024-04-08 22:15:33.383 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7033/_vs/browserLink - null null
+2024-04-08 22:15:33.391 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7033/_framework/aspnetcore-browser-refresh.js - 200 13744 application/javascript; charset=utf-8 8.2056ms
+2024-04-08 22:15:33.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7033/_vs/browserLink - 200 null text/javascript; charset=UTF-8 54.2897ms
+2024-04-08 22:15:33.491 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7033/swagger/v1/swagger.json - null null
+2024-04-08 22:15:33.625 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7033/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 133.9667ms
+2024-04-08 22:15:43.863 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7033/api/Regions - null null
+2024-04-08 22:15:43.938 +05:30 [INF] Executing endpoint 'api8.Controllers.RegionsController.GetAll (api8)'
+2024-04-08 22:15:43.957 +05:30 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller api8.Controllers.RegionsController (api8).
+2024-04-08 22:15:44.163 +05:30 [INF] Get All Was invoked
+2024-04-08 22:15:44.239 +05:30 [ERR] New exception for testing
+2024-04-08 22:15:44.277 +05:30 [INF] Executed action api8.Controllers.RegionsController.GetAll (api8) in 314.2837ms
+2024-04-08 22:15:44.280 +05:30 [INF] Executed endpoint 'api8.Controllers.RegionsController.GetAll (api8)'
+2024-04-08 22:15:44.284 +05:30 [ERR] An unhandled exception has occurred while executing the request.
+System.Exception: New exception for testing
+   at api8.Controllers.RegionsController.GetAll() in C:\Users\User\source\repos\api8\Controllers\RegionsController.cs:line 37
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2024-04-08 22:15:44.323 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7033/api/Regions - 500 null text/plain; charset=utf-8 460.1796ms
